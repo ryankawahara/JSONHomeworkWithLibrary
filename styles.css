@@ -1,0 +1,204 @@
+body {
+  padding:0;
+margin:0;
+background: linear-gradient(to bottom,#131C34, #000000) fixed;
+}
+
+@font-face {
+  font-family: 'AvengersFont';
+  src: url('AVENGEANCE HEROIC AVENGER.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.title{
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  font-family:AvengersFont;
+  font-size:75px;
+  background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+/* font gradient from https://css-tricks.com/snippets/css/gradient-text/ */
+
+}
+
+#mcuMovieGrid {
+
+
+  color:white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  font-family: Poppins;
+  margin-left: 25px;
+  margin-right:25px;
+
+
+}
+
+.subtitle{
+  font-size:35px;
+  font-weight:bold;
+  font-family: Poppins;
+  color:white;
+  text-align: center;
+
+}
+
+
+
+
+
+
+.directorLinkStyle{
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+  transition-duration: 1s;
+  /* padding-left: 15px; */
+
+}
+
+.directorLinkStyle:hover{
+  text-decoration:none;
+    border-bottom: 2px solid white;
+
+  transition-duration: 0.25s;
+}
+
+.movieGridStyles{
+  display: flex;
+  flex-direction:row;
+  /* justify-content: center; */
+  /* background-color:pink; */
+    height:708px;
+
+
+}
+
+.pictureDivStyles{
+  /* display: inline-block; */
+
+  /* left:400px; */
+  width:50%;
+  height:100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* justify-content: center; */
+
+
+  /* background-color:white; */
+}
+
+.movieAttributeStyles{
+  font-size:18px;
+  width:50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.moviePosterStyles{
+  /* border: 2px solid red; */
+
+  font-size:1px;
+  top:0;
+  /* right:0; */
+
+  width:100%;
+  max-width: 350px;
+  margin-bottom: 0;
+
+  height:auto;
+  transition-duration: 0.5s;
+/* border:  2px solid blue; */
+  /* margin-left: auto; */
+
+
+
+}
+
+.moviePosterStyles:hover{
+box-shadow:1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+/* box shadow from https://www.w3schools.com/css/css3_shadows.asp */
+}
+
+.embedTrailerStyle{
+  margin:0;
+  margin-top: -20px;
+  /* margin-top: auto; */
+  /* position: relative;
+  justify-self: right; */
+  width:100%;
+  height:550px;
+  border:none;
+  max-width: 350px;
+margin-left: auto;
+}
+
+.movieAttributesParagraphStyles{
+  color:white;
+  margin:0;
+  padding:0;
+  padding-left: 15px;
+}
+
+.movieAttributesHeaderStyles{
+  color:white;
+  text-align: center;
+  /* padding-left: 15px; */
+
+}
+
+.synopsisStyle{
+  margin:0;
+  padding:0;
+  padding-left: 15px;
+
+  margin-bottom:10px;
+}
+
+.IronManStyles{
+  background-image:linear-gradient(to bottom,#e74c3c, #f1c40f);
+}
+
+.HulkStyles{
+  background-image:linear-gradient(to bottom,#009432, #be2edd);
+
+}
+
+.IronMan2Styles{
+  background-image:linear-gradient(to bottom,#e74c3c, #95afc0);
+
+}
+
+.ThorStyles{
+  background-image:linear-gradient(to bottom,#30336b, #ED4C67);
+
+}
+
+.CaptainAmericaStyles{
+  background-image:linear-gradient(to bottom,#0652DD, #EA2027);
+
+}
+
+.TheAvengersStyles{
+  background-image:linear-gradient(to bottom,#64979C, #010101);
+
+}
+
+.castHeaderStyle{
+  /* margin-top:auto; */
+  text-align:center;
+  font-weight:bold;
+  font-size:22px;
+}
+
+.castListStyle{
+  font-size:15px;
+padding-left:15px;
+}
