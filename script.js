@@ -1,6 +1,4 @@
-import Glide from '@glidejs/glide'
 
-new Glide('.glide').mount()
 
 let movieGrid;
 window.addEventListener('DOMContentLoaded', function(){
@@ -211,19 +209,32 @@ function organizeJSON(organizeThisJSON){
   movieGridDiv.appendChild(pictureHolderDiv);
   pictureHolderDiv.classList.add('pictureDivStyles');
 
-
   let moviePoster = document.createElement("IMG");
     moviePoster.classList.add("moviePosterStyles");
     moviePoster.src = organizeThisJSON['posterSource'];
 
+let clickableMoviePoster= document.createElement("a");
+
+clickableMoviePoster.classList.add('clickableMoviePosterStyles');
+clickableMoviePoster.setAttribute('data-fancybox',"gallery");
+clickableMoviePoster.setAttribute('data-caption',organizeThisJSON['Title']);
+clickableMoviePoster.href=organizeThisJSON['posterSource'];
+clickableMoviePoster.appendChild(moviePoster);
+
+// clickableMoviePoster.innerHTML = "<a data-fancybox=\"gallery\" href=\"IronMan.jpeg\"><img src=\"IronMan.jpeg\"></a>"
+pictureHolderDiv.appendChild(clickableMoviePoster);
 
 
-let linkToMovie = document.createElement("a");
-linkToMovie.href=organizeThisJSON["movieLink"];
-linkToMovie.appendChild(moviePoster)
+
+
+
+
+// let linkToMovie = document.createElement("a");
+// linkToMovie.href=organizeThisJSON["movieLink"];
+// linkToMovie.appendChild(moviePoster);
 // link image from https://stackoverflow.com/questions/17049455/javascript-how-do-i-make-a-javascript-image-link-to-a-page
 
-pictureHolderDiv.appendChild(linkToMovie);
+// pictureHolderDiv.appendChild(linkToMovie);
 let embedTrailer = document.createElement("iframe");
 embedTrailer.setAttribute("src",organizeThisJSON["trailerLink"]);
 embedTrailer.classList.add('embedTrailerStyle');
